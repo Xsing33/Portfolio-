@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut Icon" href="images\X.PNG">
+    <title>Xavier Singletary</title>
+  </head>
+  <body>
+    <div id=home></div>
+    <div class="header">
+    <header class="navbar fixed-top  animated fadeIn">
+      <h1>Xavier</h1>
+    
+       <div class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+       </div>  
+      <nav class="navbar-links">
+        <ul id="navbar">
+          <li><a href="">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+    <!-- 
+
+ABOUT ME SECTION
+
+
+     -->
+    <section id="about" class=" about animated fadeInLeft"> 
+      
+        <p>
+         Xavier Singletary front end developer based in Atlanta, Georgia.
+          <br />
+          <br>
+      With my passion for learning web developement I bring excitement and energy to the developement process.
+        </p>
+        <a href="#projects" class="btn btn-secondary btn-projects">Projects</a>
+      
+      </section>
+<!-- 
+
+PROJECTS
+
+ -->
+ 
+    <section id="projects">
+      <div class="project-contaier">
+        <img src="../images/javascript Calculator.jpg" alt="" />
+        <p class="project-description">JavaScript Calculator</p>
+        <a
+          href="https://github.com/Xsing33/javascript-calculator"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/javascript-calculator/"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>CSS Grid</li>
+          <li>ES6 JavaScript</li>
+        </ul>
+      </div>
+      <div class="project-contaier">
+        <img src="../images/weatherapp.jpg" alt="" />
+        <p class="project-description">JavaScript Weather app</p>
+        <a
+          href="https://github.com/Xsing33/Weather-App"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Weather-App/"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>ES6 JavaScript</li>
+          <li>Weather Api</li>
+        </ul>
+      </div>
+      
+      <div class="project-contaier">
+        <img src="../images/contactform.jpg" alt="" />
+        <p class="project-description">Responsive Contact form</p>
+        <a
+          href="https://github.com/Xsing33/Responsive-contact-form-"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Responsive-contact-form-/"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          
+        </ul>
+      </div>
+      <div class="project-contaier">
+        <img src="../images/watchlanding.jpg" alt="" />
+        <p class="project-description">A Landing page for a watch company.</p>
+        <a
+          href="https://xsing33.github.io/Responsive-landing-page/"
+          class="btn btn-secondary"
+          >Code</a
+        >
+        <a
+          href="https://xsing33.github.io/Responsive-landing-page/"
+          class="btn btn-secondary"
+          >Hosted Version</a
+        >
+        <ul class="project-skills">
+          <li>HTML</li>
+          <li>CSS</li>
+         
+        </ul>
+      </div>
+    </section>
+    <!-- 
+
+
+FOOTER SECTION
+
+
+     -->
+    <footer id="footer" >
+      <div class="contact animated bounceInLeft">
+        <h3>Contact Me</h3>
+        <form
+        action="https://formspree.io/xgeobjvr"
+        method="POST"
+      >
+          <p>
+            <label>Email</label>
+            <input type="email address" name="name"  rows='5'/>
+          </p>
+
+          <p class="full">
+            <label>Message</label> 
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </footer>
+  </div>
+  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+   
+
+  </body>
+</html>

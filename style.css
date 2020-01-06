@@ -1,0 +1,239 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+
+  position: absolute;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: "Roboto Mono", monospace;
+  /* fluid typography 
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+  font-size: 18px;
+  line-height: 50px;
+}
+
+/* 
+
+
+HEADER
+
+
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem 2rem;
+  color: black;
+  font-weight: 100;
+}
+
+nav ul {
+  display: flex;
+  /* position: sticky; */
+  position: relative;
+  top: 0;
+}
+
+nav li {
+  list-style: none;
+  margin: 3rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+a.active,
+a:hover {
+  border-bottom: 1px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-scrolled {
+  background-color: #eef7f1;
+}
+.bg-dark {
+  background-color: rgba(39, 32, 32, 0.5) !important;
+}
+
+/* HAMBURGER */
+.toggle-button {
+  position: absolute;
+  top: 2.8rem;
+  right: 6rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/*
+
+ABOUT SECTION
+
+*/
+
+#about {
+  height: 80vh;
+  margin-top: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+  color: black;
+}
+
+/* 
+
+PROJECTS
+
+*/
+
+#projects {
+  margin: 2rem;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.project-contaier {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-skills {
+  list-style: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* 
+
+FOOTER STYLES
+
+*/
+footer {
+  margin: 2rem 3rem;
+}
+
+footer h3 {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact form label {
+  display: inline-block;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: #eef7f1;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #b2aade;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* MEDIA QUERIES  */
+
+@media only screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+  h1 {
+    justify-self: center;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    display: none;
+  }
+  .navbar-links li {
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .navbar-links a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.act {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+#about p {
+  word-wrap: break-word;
+  line-height: 2rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#project {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
