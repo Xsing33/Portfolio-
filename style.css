@@ -108,7 +108,7 @@ ABOUT SECTION
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  font-size: 1rem;
   position: relative;
   color: black;
 }
