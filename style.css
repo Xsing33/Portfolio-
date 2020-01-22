@@ -191,6 +191,14 @@ footer h3 {
 /* MEDIA QUERIES  */
 
 @media only screen and (max-width: 1000px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2rem;
+  }
+
   header {
     flex-direction: column;
     position: relative;
@@ -223,17 +231,16 @@ footer h3 {
     justify-content: center;
     align-content: center;
   }
-}
+  #about p {
+    word-wrap: break-word;
+    line-height: 2rem;
+    font-size: 1em;
+    text-align: center;
+  }
 
-#about p {
-  word-wrap: break-word;
-  line-height: 2rem;
-  font-size: 3rem;
-  text-align: center;
-}
-
-#project {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  #projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
