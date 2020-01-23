@@ -75,7 +75,7 @@ a:hover {
 }
 
 /* HAMBURGER */
-.toggle-button {
+/* .toggle-button {
   position: absolute;
   top: 2.8rem;
   right: 6rem;
@@ -93,6 +93,9 @@ a:hover {
   border-radius: 20px;
 }
 
+.act {
+  flex-direction: column;
+} */
 /*
 
 ABOUT SECTION
@@ -102,13 +105,14 @@ ABOUT SECTION
 #about {
   height: 80vh;
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 4rem;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1rem;
+
   position: relative;
   color: black;
 }
@@ -196,7 +200,7 @@ footer h3 {
     flex-direction: column;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 2rem;
+    padding: 2rem auto;
   }
 
   header {
@@ -205,20 +209,28 @@ footer h3 {
   }
   h1 {
     justify-self: center;
+    display: none;
   }
-  .toggle-button {
+  /* .toggle-button {
     display: flex;
-  }
+  } */
   .navbar-links {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    display: none;
+    display: block;
   }
   .navbar-links li {
-    margin: 1rem;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 5%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .disappear {
     display: none;
   }
 
@@ -232,8 +244,10 @@ footer h3 {
     align-content: center;
   }
   #about p {
+    padding: 2rem auto;
+    margin: 1rem auto;
     word-wrap: break-word;
-    line-height: 2rem;
+    line-height: 2.2rem;
     font-size: 1em;
     text-align: center;
   }
