@@ -198,6 +198,7 @@ footer h3 {
   body {
     display: flex;
     flex-direction: column;
+
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 2rem auto;
@@ -243,16 +244,28 @@ footer h3 {
     justify-content: center;
     align-content: center;
   }
+
+  #about {
+    height: 3rem;
+    margin: 3rem auto;
+    padding: 3rem auto;
+  }
+
   #about p {
     padding: 2rem auto;
     margin: 1rem auto;
     word-wrap: break-word;
-    line-height: 2.2rem;
-    font-size: 1em;
+    line-height: 1rem;
+    font-size: 1rem;
     text-align: center;
   }
 
+  #about a {
+    display: none;
+  }
+
   #projects {
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
