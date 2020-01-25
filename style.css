@@ -194,7 +194,7 @@ footer h3 {
 
 /* MEDIA QUERIES  */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   body {
     display: flex;
     flex-direction: column;
@@ -253,6 +253,88 @@ footer h3 {
   #about {
     height: 20rem;
     margin: 3rem auto;
+    padding: 8rem auto;
+  }
+
+  #about p {
+    padding: 2rem auto;
+    margin: 1rem auto;
+    word-wrap: break-word;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  #about a {
+    display: none;
+  }
+
+  #projects {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 2rem auto;
+  }
+
+  header {
+    flex-direction: column;
+    position: relative;
+  }
+  h1 {
+    justify-self: center;
+    display: none;
+  }
+  /* .toggle-button {
+    display: flex;
+  } */
+
+  .navbar-links {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    display: block;
+  }
+  .navbar-links li {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .navbar-links a {
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-scrolled {
+    background-color: rgba(255, 255, 255, 0.685);
+  }
+
+  .navbar-links.act {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #about {
+    height: 45rem;
+    margin: 1rem auto;
     padding: 8rem auto;
   }
 
